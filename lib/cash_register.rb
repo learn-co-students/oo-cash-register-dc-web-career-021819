@@ -12,8 +12,8 @@ class CashRegister
     quantity.times do
       @items << item
     end
-    @last_item_price = price
-    @total += price * quantity
+    self.last_item_price = price
+    self.total += price * quantity
   end
 
   def apply_discount
